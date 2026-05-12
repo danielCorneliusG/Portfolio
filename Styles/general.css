@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@100..900&display=swap');
+
+:root {
+    --bg-main: #2C3333;
+
+    --accent-primary: #71b7b9;
+    --accent-hover: #395B64;
+    --accent-soft: rgba(113, 183, 185, 0.15);
+
+    --text-primary: #E7F6F2;
+    --text-secondary: rgba(231, 246, 242, 0.75);
+
+    --surface-glass: rgba(255, 255, 255, 0.03);
+    --surface-hover: rgba(255, 255, 255, 0.05);
+    --border-light: rgba(255, 255, 255, 0.08);
+
+    --shadow-accent: rgba(113, 183, 185, 0.15);
+    --blur-default: blur(10px);
+
+    --font-title: "Archivo Black", sans-serif;
+    --font-text: "Archivo", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--bg-main);
+    min-height: 100vh;
+    overflow-x: hidden;
+    color: var(--text-primary);
+}
