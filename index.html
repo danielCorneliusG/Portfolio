@@ -24,10 +24,38 @@
             <a href="#project">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
-        <div class="header-buttons">
-            <span>Language</span>
-            <span>Pallet</span>
+
+    <div class="header-buttons">
+
+        <div class="lang-menu">
+            
+            <button class="lang-btn" id="lang-toggle">
+                <img id="selected-flag"
+                    src="https://flagcdn.com/w40/us.png"
+                    alt="English">
+                <span id="selected-text">EN</span>
+            </button>
+
+            <div class="dropdown hidden" id="dropdown">
+
+                <div class="dropdown-item"
+                    data-lang="en">
+                    <img src="https://flagcdn.com/w40/us.png">
+                    <span>English</span>
+                </div>
+
+                <div class="dropdown-item"
+                    data-lang="pt">
+                    <img src="https://flagcdn.com/w40/br.png">
+                    <span>Português</span>
+                </div>
+
+            </div>
+
         </div>
+
+        <span>Palette</span>
+    </div>
     </header>
 
     <main id="about" class="main-container">
@@ -247,6 +275,8 @@
             © 2026 Daniel Cornelius. All rights reserved.
         </p>
     </footer>
+
+    <script src="./script/script.js"></script>
 
 </body>
 

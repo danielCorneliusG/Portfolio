@@ -30,10 +30,87 @@ header {
     transition: .3s;
 }
 
-.header-navigation a:hover,
-.header-buttons span:hover {
+.header-navigation a:hover {
     background: var(--accent-primary);
     color: var(--accent-hover);
+}
+
+.lang-menu {
+    position: relative;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: var(--surface-hover);
+    color: var(--text-primary);
+
+    border: 1px solid var(--border-light);
+    border-radius: 8px;
+
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.lang-btn:hover {
+    border-color: var(--accent-primary);
+    box-shadow: 0 0 20px var(--shadow-accent);
+}
+
+.lang-btn img {
+    width: 24px;
+    height: 18px;
+    border-radius: 2px;
+}
+
+.dropdown {
+    position: absolute;
+    top: 110%;
+    right: 0;
+
+    width: 160px;
+
+    background: #1f1f1f;
+    border: 1px solid #444;
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    opacity: 1;
+    transform: translateY(0);
+
+    transition: 0.3s;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 12px;
+    cursor: pointer;
+
+    color: white;
+
+    transition: 0.2s;
+}
+
+.dropdown-item:hover {
+    background: #333;
+}
+
+.dropdown-item img {
+    width: 24px;
+    height: 18px;
+    border-radius: 2px;
 }
 
 .main-container {
